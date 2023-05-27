@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+
+<body class="about">
+    <header class="fixed">
+        <div class="logo">
+            <h1>Nourish<span>Nation</span></h1>
+        </div>
+      <div class="menuToggle"></div>
+      <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html"class="active">About</a></li>
+            <li><a href="fitness.html">Fitness</a></li>
+            <li><a href="#">Nutrition</a>
+                <ul>
+                    <li><a href="protein.html">Protien</a></li>
+                    <li><a href="carbohydrates.html">Carbohydrates</a></li>
+                    <li><a href="vitamins.html">Vitamins</a></li>
+                    <li><a href="supplements.html">Supplements</a></li>
+                </ul></li>
+            <li><a href="#">Diet Recipes</a>
+                <ul>
+                    <li><a href="break_fast.html">Break Fast</a></li>
+                    <li><a href="dinner.html">Dinner</a></li>
+                    <li><a href="lunch.html">Lunch</a></li>
+                </ul>
+            </li>
+        </ul>
+      </nav>
+
+    </header>
+    <section class="about-main">
+        <div class="about-bg">
+            <div class="position-fix">
+                <h3>ABOUT</h3>
+            </div>
+            <h4>About us </h4>
+            <div class="about-content">
+                <img src="image/54763.jpg" alt="about">
+                <p>
+                    NurishNation dreamed of “a future brilliant beyond compare”.
+                     His vision was aligned with improving people’s lives through better nutrition and an 
+                     unparalleled business opportunity. He turned this dream into reality in 2023 as he launched 
+                     NurishNation in Los Angeles, CA and began rewriting the history of network marketing. 
+                     10 years later, it now operates in more than 30 countries with over 1,000 employees around the 
+                     world.<br>
+                     &nbsp;&nbsp;&nbsp;&nbsp;Everything we do  is about greatness and it starts with great products; and all our 
+                     products start with proven science. Nutrition is dedicated to developing innovative, 
+                     effective products that comply with high quality research, development and manufacturing 
+                     standards in the industry.
+                </p>
+                <div class="search">
+                    <img src="image/2312019.jpg" alt="about">
+                    <p>The history of attempts to cope with malnutrition during the last
+                        fifty years ranges from an essentially medical/clinical approach to
+                        today's more common intersectoral development orientation. While the
+                        former stressed detection and management of malnourished individuals,
+                        the latter relies on a combination of factors to prevent and control
+                        malnutrition in entire populations. These include a more equitable
+                        distribution of resources, especially food, within and between
+                        families, communities and countries； expanded purchasing power and
+                        production possibilities； increased availability of relevant
+                        information, education and training; and improved access to health
+                        and other social services.
+                        No single sector has the capacity to act fully and effectively on
+                        more than one or two of the factors that, collectively, determine
+                        nutritional status. An intersectoral strategy thus emphasizes the
+                        interdependence of a variety of actions to prevent and manage
+                        malnutrition and the importance of a holistic approach to developing
+                        national food and nutrition policy. The Green Revolution, for
+                        example, demonstrates that adequate total food production is, by
+                        itself, no guarantee that sufficient food will be available for all.
+                        An approach to food distribution based on equity, combined with
+                        poverty-alleviation programmes that are themselves linked to balanced
+                        rural development, are vital additional components of national food
+                        and nutrition policies everywhere.
+                    </p><hr>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-content">
+            <h3> NurishNation</h3>
+            <p>Nutrition is the biochemical and physiological process by which an organism uses food to support its life.
+                 It provides organisms with nutrients</p>
+            <ul class="socials">
+                <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram"></i></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-google-plus"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>copyright &copy;2023<span> NurishNation </span></p>
+        </div>
+    </footer>
+</body>
+<script>
+    let menuToggle =document.querySelector('.menuToggle');
+   let header = document.querySelector('header');
+   menuToggle.onclick = function(){
+       header.classList.toggle('active');
+   }
+</script>
+</html>

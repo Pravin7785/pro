@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NurishNation.com</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body class="index">
+    <header class="fixed">
+        <div class="logo">
+            <h1>Nourish<span>Nation</span></h1>
+        </div>
+      <div class="menuToggle"></div>
+      <nav>
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="fitness.html">Fitness</a></li>
+            <li><a href="#">Nutrition</a>
+                <ul>
+                    <li><a href="protein.html">Protien</a></li>
+                    <li><a href="carbohydrates.html">Carbohydrates</a></li>
+                    <li><a href="vitamins.html">Vitamins</a></li>
+                    <li><a href="supplements.html">Supplements</a></li>
+                </ul></li>
+            <li><a href="#">Diet Recipes</a>
+                <ul>
+                    <li><a href="break_fast.html">Break Fast</a></li>
+                    <li><a href="dinner.html">Dinner</a></li>
+                    <li><a href="lunch.html">Lunch</a></li>
+                </ul>
+            </li>
+        </ul>
+      </nav>
+
+    </header>
+    <section class="bg-content">
+        <div class="body-c">
+            <h1>Nutrition Food</h1>
+            <p class="para">&nbsp;&nbsp;Nutrition is a critical part of health and development.
+                Better nutrition is related toimproved infant, child and maternal health,
+                stronger immune systems, safer pregnancy and childbirth,lower risk of
+                non-communicable diseases (such as diabetes and cardiovascular disease), and longevity.
+                Healthy children learn better. People with adequate nutrition are more productive and can create
+                opportunities to gradually break the cycles of poverty and hunger.
+            </p>
+            <a href="about.html" class="main-btn">Learn More</a>
+        </div>
+    </section>
+    <section class="more"> About Nutrition</section>
+    <div class="card">
+    <div class="card-container">
+        <div class="box">
+            <h3>Protien</h3>
+            <p>Proteins are needed for the body to function properly. They are the basis of body structures, such as 
+                skin and hair, and of other substances</p>
+                <a href="protein.html"><button> click here</button></a>
+                <span class="count">1</span>
+        </div>
+        <div class="box">
+            <h3>vitamin</h3>
+            <p>A vitamin is an organic compound, which means that it contains carbon. 
+                It is also an essential nutrient that the body may need to get from food</p>
+                <a href="vitamins.html"><button> click here</button></a>
+                <span class="count">2</span>
+        </div>
+        <div class="box">
+            <h3>Supplement</h3>
+            <p>Dietary supplements come in a variety of forms, including tablets, 
+                capsules, gummies, and powders, as well as drinks and energy bars</p>
+                <a href="supplements.html"><button> click here</button></a>
+                <span class="count">3</span>
+        </div>
+    </div>
+</div>
+    <footer>
+        <div class="footer-content">
+            <h3> NurishNation</h3>
+            <p>Nutrition is the biochemical and physiological process by which an organism uses food to support its life.
+                 It provides organisms with nutrients</p>
+            <ul class="socials">
+                <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram"></i></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-google-plus"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>copyright &copy;2023<span> NurishNation </span></p>
+        </div>
+    </footer>
+
+</body>
+<script>
+     let menuToggle =document.querySelector('.menuToggle');
+    let header = document.querySelector('header');
+    menuToggle.onclick = function(){
+        header.classList.toggle('active');
+    }
+</script>
+</html>

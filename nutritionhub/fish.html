@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fish</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+
+<body>
+    <header class="fixed">
+        <div class="logo">
+            <h1>Nourish<span>Nation</span></h1>
+        </div>
+      <div class="menuToggle"></div>
+      <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="fitness.html">Fitness</a></li>
+            <li><a href="#"class="active">Nutrition</a>
+                <ul>
+                    <li><a href="protein.html"class="active">Protien</a></li>
+                    <li><a href="carbohydrates.html">Carbohydrates</a></li>
+                    <li><a href="vitamins.html">Vitamins</a></li>
+                    <li><a href="supplements.html">Supplements</a></li>
+                </ul></li>
+            <li><a href="#">Diet Recipes</a>
+                <ul>
+                    <li><a href="break_fast.html">Break Fast</a></li>
+                    <li><a href="dinner.html">Dinner</a></li>
+                    <li><a href="lunch.html">Lunch</a></li>
+                </ul>
+            </li>
+        </ul>
+      </nav>
+    </header>
+        <section>
+            <img src="image/fish.jpg" alt="fish image" class="img-size">
+            <div class="sub-content">
+                Fish is a nutritious food that provides high-quality protein and a range of essential nutrients. Here's some information about fish, including
+                 its protein content and different ways to enjoy it:
+
+                1. Protein content: Fish is an excellent source of protein. The exact protein content can vary depending on the type of fish, but on 
+                average, fish contains about 20-25 grams of protein per 3.5-ounce (100-gram) serving.
+                
+                2. Nutritional profile: Fish is known for its rich content of omega-3 fatty acids, which are beneficial for heart health and brain
+                 function. Fish is also a good source of vitamins such as vitamin D and B12, selenium, iodine, and various minerals.
+                
+                3. Types of fish: There are numerous types of fish available, each with its own unique flavor and texture. Some popular varieties include
+                 salmon, tuna, trout, cod, haddock, snapper, tilapia, and halibut. It's important to consider factors such as sustainability, mercury 
+                 levels, and personal preferences when choosing fish.
+                
+                4. Cooking methods: Fish can be prepared in various ways, allowing for a range of flavors and textures:
+                
+                   - Grilling: Grilling fish can impart a smoky flavor and create a delicious charred exterior. It's important to choose firm fish 
+                   varieties suitable for grilling, such as salmon, tuna, or swordfish.
+                
+                   - Baking or roasting: Baking or roasting fish in the oven with herbs, spices, or a flavorful marinade can result in a tender and 
+                   flavorful dish. This method is suitable for different types of fish.
+                
+                   - Steaming: Steaming fish helps retain its moisture and delicate flavor while preserving its nutritional value. Steaming is a healthy 
+                   cooking method that requires minimal added fats.
+                
+                   - Pan-frying: Pan-frying fish in a small amount of oil can create a crispy exterior while keeping the inside moist and tender. This 
+                   method is suitable for fish fillets or smaller whole fish.
+                
+                   - Poaching: Poaching fish in flavorful liquid, such as broth or wine, helps keep it moist and infuses it with additional flavors. 
+                   This gentle cooking method is ideal for delicate fish varieties.
+                
+                   - Sushi or sashimi: Raw fish is used in sushi or sashimi, popular Japanese dishes. It's important to use fresh, high-quality fish 
+                   and follow proper food handling and safety guidelines.
+                
+                   - Fish soups and stews: Fish can be used in soups and stews, adding flavor and nutritional value. Fish chowder, bouillabaisse, or 
+                   fish curry are some examples.
+                
+                   - Fish tacos or wraps: Grilled or pan-seared fish can be used as a filling for tacos or wraps. Pair with fresh toppings like lettuce, 
+                   tomatoes, and a flavorful sauce for a tasty meal.
+                
+                   - Ceviche: Ceviche is a dish where raw fish is "cooked" in citrus juice. The acid in the juice denatures the proteins, giving the 
+                   fish a cooked texture and tangy flavor.
+                
+                It's important to choose fish from sustainable sources and be mindful of any allergies or dietary restrictions. Additionally, ensure 
+                that fish is cooked to a safe internal temperature to prevent foodborne illnesses. If you have any concerns or specific dietary needs,
+                 it's advisable to consult with a healthcare professional or registered dietitian for personalized advice.  
+            </div>
+        </section>
+        <center>
+            <div class="white"><a href="lean_beef.html"class="next-button">Previous</a>         <a href="egg.html"class="next-button">  Next  </a>
+            </div>
+        </center>
+    <footer>
+            <div class="footer-content">
+                <h3> NurishNation</h3>
+                <p>Nutrition is the biochemical and physiological process by which an organism uses food to support its life.
+                     It provides organisms with nutrients</p>
+                <ul class="socials">
+                    <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-google-plus"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <p>copyright &copy;2023<span> NurishNation </span></p>
+            </div>
+    </footer>
+</body>
+<script>
+    let menuToggle =document.querySelector('.menuToggle');
+   let header = document.querySelector('header');
+   menuToggle.onclick = function(){
+       header.classList.toggle('active');
+   }
+</script>
+</html>

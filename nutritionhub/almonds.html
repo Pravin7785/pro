@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Almonds</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+
+<body>
+    <header class="fixed">
+        <div class="logo">
+            <h1>Nourish<span>Nation</span></h1>
+        </div>
+      <div class="menuToggle"></div>
+      <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="fitness.html">Fitness</a></li>
+            <li><a href="#"class="active">Nutrition</a>
+                <ul>
+                    <li><a href="protein.html"class="active">Protien</a></li>
+                    <li><a href="carbohydrates.html">Carbohydrates</a></li>
+                    <li><a href="vitamins.html">Vitamins</a></li>
+                    <li><a href="supplements.html">Supplements</a></li>
+                </ul></li>
+            <li><a href="#">Diet Recipes</a>
+                <ul>
+                    <li><a href="break_fast.html">Break Fast</a></li>
+                    <li><a href="dinner.html">Dinner</a></li>
+                    <li><a href="lunch.html">Lunch</a></li>
+                </ul>
+            </li>
+        </ul>
+      </nav>
+    </header>
+        <section>
+            <img src="image/almonds.jpg" alt="almonds image" class="img-size">
+            <div class="sub-content">
+                Almonds are a popular tree nut that is not only delicious but also packed with nutritional benefits. Here is some information
+about almonds, including their protein content and different ways to incorporate them into your diet:
+
+1. Protein content: Almonds are a good plant-based source of protein. Approximately 1 ounce (28 grams) of almonds contains about 6 grams of 
+protein. They also provide other essential nutrients like dietary fiber, healthy fats, vitamins (such as vitamin E and some B vitamins), and 
+minerals (such as magnesium and manganese).
+
+2. Nutritional profile: Almonds are known for their high content of monounsaturated fats, which are considered heart-healthy fats. These nuts
+are also a good source of antioxidants, including vitamin E, which helps protect cells from damage caused by free radicals.
+
+3. Eating almonds: Almonds are incredibly versatile and can be enjoyed in various ways:
+
+   - Raw almonds: You can eat almonds as a convenient and nutritious snack by simply consuming them as they are. Raw almonds have a mild, 
+   nutty flavor and a crunchy texture.
+
+   - Roasted almonds: Roasting almonds can enhance their flavor. You can roast them in the oven by spreading the nuts on a baking sheet and 
+   baking at around 350°F (175°C) for 10-15 minutes, or until they become golden brown and fragrant. Keep an eye on them to prevent burning.
+
+   - Almond butter: Almond butter is made by grinding almonds into a creamy spread. It can be used as a spread on bread, toast, or crackers, 
+   or added to smoothies, oatmeal, or baked goods.
+
+   - Almond milk: Almond milk is a popular plant-based milk alternative. It can be used in place of cow's milk in beverages, cereals, 
+   smoothies, and recipes that call for milk.
+
+   - Almond flour: Ground almonds, known as almond flour or almond meal, can be used as a gluten-free alternative to regular flour in baking 
+   recipes. It adds a nutty flavor and a moist texture to baked goods.
+
+   - Almond toppings: Chopped or slivered almonds can be sprinkled on salads, yogurt, oatmeal, or desserts to add crunch and flavor.
+
+Remember that while almonds are nutritious, they are also calorie-dense. It's best to consume them in moderation as part of a balanced diet. 
+If you have any specific dietary concerns or allergies, it's advisable to consult with a healthcare professional or registered dietitian for 
+personalized guidance.
+            </div>
+        </section>
+        <center>
+<div class="white"><a href="egg.html"class="next-button">Previous</a>         <a href="chicken Breast.html"class="next-button">  Next  </a>
+            </div>
+        </center>
+    <footer>
+            <div class="footer-content">
+                <h3> NurishNation</h3>
+                <p>Nutrition is the biochemical and physiological process by which an organism uses food to support its life.
+                     It provides organisms with nutrients</p>
+                <ul class="socials">
+                    <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-google-plus"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <p>copyright &copy;2023<span> NurishNation </span></p>
+            </div>
+    </footer>
+</body>
+<script>
+    let menuToggle =document.querySelector('.menuToggle');
+   let header = document.querySelector('header');
+   menuToggle.onclick = function(){
+       header.classList.toggle('active');
+   }
+</script>
+</html>

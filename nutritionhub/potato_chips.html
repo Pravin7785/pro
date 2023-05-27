@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>potato chips</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+
+<body>
+    <header class="fixed">
+        <div class="logo">
+            <h1>Nourish<span>Nation</span></h1>
+        </div>
+      <div class="menuToggle"></div>
+      <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="fitness.html">Fitness</a></li>
+            <li><a href="#"class="active">Nutrition</a>
+                <ul>
+                    <li><a href="protein.html">Protien</a></li>
+                    <li><a href="carbohydrates.html"class="active">Carbohydrates</a></li>
+                    <li><a href="vitamins.html">Vitamins</a></li>
+                    <li><a href="supplements.html">Supplements</a></li>
+                </ul></li>
+            <li><a href="#">Diet Recipes</a>
+                <ul>
+                    <li><a href="break_fast.html">Break Fast</a></li>
+                    <li><a href="dinner.html">Dinner</a></li>
+                    <li><a href="lunch.html">Lunch</a></li>
+                </ul>
+            </li>
+        </ul>
+      </nav>
+    </header>
+        <section>
+            <img src="image/carbo/potato chips.jpg" alt=" potato chips image" class="img-size">
+            <div class="sub-content">
+                             Potato chips are thin slices of potatoes that are fried or baked until crispy. They are a popular snack known for their crunchy
+                 texture and savory flavors. Here's some information about potato chips in terms of carbohydrates and how to consume them:
+
+                1. Carbohydrate content: Potato chips are primarily made from potatoes, which are a starchy vegetable rich in carbohydrates. The exact 
+                carbohydrate content of potato chips can vary depending on the brand, thickness, and preparation method. On average, a 1-ounce (28-gram)
+                 serving of potato chips contains approximately 15-20 grams of carbohydrates.
+                
+                2. Nutritional profile: While potatoes themselves are a good source of nutrients like vitamin C and potassium, the nutritional value of 
+                potato chips is generally low. Most commercially available potato chips are high in calories, unhealthy fats, sodium, and artificial 
+                additives. They tend to be low in fiber and other essential nutrients.
+                
+                3. Eating potato chips:
+                
+                   - As a snack: Potato chips are typically consumed as a snack between meals or during social gatherings. They are often served in a bowl 
+                     and enjoyed on their own.
+                
+                   - Pairings: Potato chips can be paired with dips, such as salsa, guacamole, hummus, or sour cream-based dips. These dips add flavor and 
+                     moisture to the chips.
+                
+                   - Sandwiches and toppings: Some people use potato chips as a topping for sandwiches, burgers, or hot dogs to add an extra crunch and 
+                     texture.
+                
+                   - Variations: There are various flavors and types of potato chips available, such as salted, barbecue, sour cream and onion, cheese-
+                     flavored, or kettle-cooked. Different brands offer different flavor options to suit individual preferences.
+                
+                   - Portion control: Due to their high calorie and fat content, it's important to practice portion control when consuming potato chips. 
+                     It's advisable to enjoy them in moderation and be mindful of serving sizes to avoid overconsumption.
+                
+                It's worth noting that regular consumption of potato chips and similar snack foods can contribute to weight gain, unhealthy eating habits,
+                and an increased risk of chronic diseases. If you are looking for healthier alternatives, you might consider baked vegetable chips, 
+                air-popped popcorn, or homemade snacks using whole ingredients. It's always beneficial to prioritize a balanced diet rich in fruits, 
+                vegetables, whole grains, and lean proteins for optimal health.
+            </div>
+        </section>
+        <center>
+            <div class="white"><a href="soda.html"class="next-button">Previous</a>         <a href="gummy_candy.html"class="next-button">  Next  </a>
+            </div>
+        </center>
+    <footer>
+            <div class="footer-content">
+                <h3> NurishNation</h3>
+                <p>Nutrition is the biochemical and physiological process by which an organism uses food to support its life.
+                     It provides organisms with nutrients</p>
+                <ul class="socials">
+                    <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-google-plus"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <p>copyright &copy;2023<span> NurishNation </span></p>
+            </div>
+    </footer>
+</body>
+<script>
+    let menuToggle =document.querySelector('.menuToggle');
+   let header = document.querySelector('header');
+   menuToggle.onclick = function(){
+       header.classList.toggle('active');
+   }
+</script>
+</html>

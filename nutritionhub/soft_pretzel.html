@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soft pretzel</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+
+<body>
+    <header class="fixed">
+        <div class="logo">
+            <h1>Nourish<span>Nation</span></h1>
+        </div>
+      <div class="menuToggle"></div>
+      <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="fitness.html">Fitness</a></li>
+            <li><a href="#"class="active">Nutrition</a>
+                <ul>
+                    <li><a href="protein.html">Protien</a></li>
+                    <li><a href="carbohydrates.html"class="active">Carbohydrates</a></li>
+                    <li><a href="vitamins.html">Vitamins</a></li>
+                    <li><a href="supplements.html">Supplements</a></li>
+                </ul></li>
+            <li><a href="#">Diet Recipes</a>
+                <ul>
+                    <li><a href="break_fast.html">Break Fast</a></li>
+                    <li><a href="dinner.html">Dinner</a></li>
+                    <li><a href="lunch.html">Lunch</a></li>
+                </ul>
+            </li>
+        </ul>
+      </nav>
+    </header>
+        <section>
+            <img src="image/carbo/softpretzel.jpg" alt=" soft pretzelimage" class="img-size">
+            <div class="sub-content">
+                A soft pretzel is a popular baked snack made from dough that is boiled briefly in water and then baked until golden brown. 
+It is typically shaped into a knot or twisted form and sprinkled with coarse salt. Here is some information about soft pretzels in terms of 
+carbohydrates and how to enjoy them:
+
+1. Carbohydrate content: Soft pretzels are primarily made from flour, which is a source of carbohydrates. The exact carbohydrate content can 
+vary depending on the size and recipe of the pretzel. On average, a standard-sized soft pretzel contains approximately 50-60 grams of 
+carbohydrates.
+
+2. Nutritional profile: In addition to carbohydrates, soft pretzels typically provide small amounts of protein and fat. They are relatively 
+low in fiber and other essential nutrients compared to whole grain products.
+
+3. Preparation: Soft pretzels can be made at home from scratch or purchased from bakeries, concession stands, or snack vendors. Commercially 
+sold pretzels may come in various sizes and flavors, including cinnamon sugar, cheese-filled, or dipped in chocolate.
+
+4. Serving suggestions: Soft pretzels are often enjoyed as a savory snack or appetizer. Here are some ways to eat them:
+
+   - Plain: Soft pretzels are delicious on their own. They have a chewy texture and a slightly salty taste. You can enjoy them as a 
+     standalone snack or serve them alongside your favorite dipping sauce.
+
+   - Dipped in mustard: One traditional way to enjoy soft pretzels is by dipping them in mustard. The tangy flavor of the mustard complements
+     the salty pretzel well.
+
+   - Cheese dip: Soft pretzels pair wonderfully with cheese dip. You can choose from a variety of cheese-based dips such as nacho cheese, 
+     beer cheese, or cheddar cheese sauce.
+
+   - Sweet variations: Soft pretzels can also be enjoyed in sweet variations. After baking, you can brush them with melted butter and 
+     sprinkle them with cinnamon sugar. Alternatively, you can dip them in chocolate or caramel sauce for a decadent treat.
+
+   - Sandwiches: Some people use soft pretzels as a bread substitute for sandwiches. They can be sliced horizontally and filled with deli 
+     meats, cheese, and condiments to create a unique and flavorful sandwich.
+
+   - Pretzel bites: Instead of making large pretzels, you can shape the dough into smaller bite-sized pieces. These pretzel bites are great 
+     for snacking and can be served with various dipping sauces.
+
+Remember to consume soft pretzels in moderation as part of a balanced diet. They can be high in refined carbohydrates and sodium. If you have
+specific dietary concerns or restrictions, it's advisable to consult with a healthcare professional or registered dietitian for personalized
+advice.
+            </div>
+        </section>
+        <center>
+            <div class="white"><a href="frech_fries.html"class="next-button">Previous</a>         <a href="honey.html"class="next-button">  Next  </a>
+            </div>
+        </center>
+    <footer>
+            <div class="footer-content">
+                <h3> NurishNation</h3>
+                <p>Nutrition is the biochemical and physiological process by which an organism uses food to support its life.
+                     It provides organisms with nutrients</p>
+                <ul class="socials">
+                    <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-google-plus"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <p>copyright &copy;2023<span> NurishNation </span></p>
+            </div>
+    </footer>
+</body>
+<script>
+    let menuToggle =document.querySelector('.menuToggle');
+   let header = document.querySelector('header');
+   menuToggle.onclick = function(){
+       header.classList.toggle('active');
+   }
+</script>
+</html>

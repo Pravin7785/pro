@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doughnuts</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+
+<body>
+    <header class="fixed">
+        <div class="logo">
+            <h1>Nourish<span>Nation</span></h1>
+        </div>
+      <div class="menuToggle"></div>
+      <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="fitness.html">Fitness</a></li>
+            <li><a href="#"class="active">Nutrition</a>
+                <ul>
+                    <li><a href="protein.html">Protien</a></li>
+                    <li><a href="carbohydrates.html"class="active">Carbohydrates</a></li>
+                    <li><a href="vitamins.html">Vitamins</a></li>
+                    <li><a href="supplements.html">Supplements</a></li>
+                </ul></li>
+            <li><a href="#">Diet Recipes</a>
+                <ul>
+                    <li><a href="break_fast.html">Break Fast</a></li>
+                    <li><a href="dinner.html">Dinner</a></li>
+                    <li><a href="lunch.html">Lunch</a></li>
+                </ul>
+            </li>
+        </ul>
+      </nav>
+    </header>
+        <section>
+            <img src="image/carbo/doughnuts.jpg" alt="Doughnuts image" class="img-size">
+            <div class="sub-content">
+                            Doughnuts are sweet, fried or baked pastries made from dough, typically shaped as a ring or filled with various creams or jellies.
+                 Here's some information about doughnuts in terms of carbohydrates and how to enjoy them:
+
+                1. Carbohydrate content: Doughnuts are primarily made from refined wheat flour, which is a source of carbohydrates. The exact carbohydrate 
+                content can vary depending on the size, type, and preparation of the doughnut. On average, a standard-sized glazed doughnut contains approximately 
+                20-30 grams of carbohydrates.
+                
+                2. Nutritional profile: Doughnuts are generally considered to be indulgent treats and are high in calories, added sugars, and unhealthy 
+                fats. They tend to be low in fiber, vitamins, and minerals. Due to their high sugar and fat content, they should be consumed in moderation 
+                as part of a balanced diet.
+                
+                3. Types of doughnuts: There are various types and flavors of doughnuts, including glazed, chocolate frosted, powdered, jelly-filled, 
+                cream-filled, and more. Different bakeries and regions may have their own specialty doughnuts.
+                
+                4. Eating doughnuts:
+                
+                   - On their own: Doughnuts are typically enjoyed as standalone treats. They can be eaten as a quick snack or dessert.
+                
+                   - Pairing with beverages: Doughnuts can be enjoyed with a cup of coffee, tea, or milk. The combination of the sweet pastry with a hot 
+                     beverage is a popular choice.
+                
+                   - Sharing and social occasions: Doughnuts are often shared among friends, family, or coworkers during social gatherings, breakfast 
+                     meetings, or special occasions.
+                
+                   - Dessert variations: Doughnuts can be incorporated into desserts by slicing them horizontally and using them as layers in a trifle,
+                     as a base for bread pudding, or crumbled as a topping for ice cream or yogurt.
+                
+                It's important to note that while doughnuts can be a delightful treat, they are generally high in calories, added sugars, and unhealthy 
+                fats. Regular consumption of doughnuts and other similar sweets can contribute to weight gain and other health issues if not balanced with
+                a nutritious diet and an active lifestyle. It's advisable to enjoy doughnuts in moderation and prioritize healthier food choices for 
+                overall well-being.
+            </div>
+        </section>
+        <center>
+            <div class="white"><a href="canned _fruit.html"class="next-button">Previous</a>         <a href="soda.html"class="next-button">  Next  </a>
+            </div>
+        </center>
+    <footer>
+            <div class="footer-content">
+                <h3> NurishNation</h3>
+                <p>Nutrition is the biochemical and physiological process by which an organism uses food to support its life.
+                     It provides organisms with nutrients</p>
+                <ul class="socials">
+                    <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-google-plus"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <p>copyright &copy;2023<span> NurishNation </span></p>
+            </div>
+    </footer>
+</body>
+<script>
+    let menuToggle =document.querySelector('.menuToggle');
+   let header = document.querySelector('header');
+   menuToggle.onclick = function(){
+       header.classList.toggle('active');
+   }
+</script>
+</html>

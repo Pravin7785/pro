@@ -1,0 +1,923 @@
+*{  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 10px;
+    font-weight: 400;
+    font-family:sans-serif ;
+    scroll-behavior: smooth;
+    line-height: 1.5;
+}
+body{
+    position: relative;
+}
+header.fixed{
+    position: fixed;
+    z-index: 3;
+}
+header{
+    position: absolute;
+    width: 100%;
+    min-height: 80px;
+    background:linear-gradient(to right,#EE5A24,#FFC321);
+    padding: 0 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .logo{ 
+    color:black;
+    font-size:20px;
+    font-weight:600;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+header .logo span{
+    font-family: cursive;
+    color:#FFC321;
+}
+
+header ul{
+    position: relative;
+}
+header ul li{
+    position: relative;
+    list-style: none;
+    float: left;
+}
+header ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    color:black;
+    font-weight: bolder;
+    transition: all 0.3s;
+    letter-spacing: 2px;
+    padding: 20px 25px;
+    display: flex;
+    justify-content: space-between;
+}
+header ul li a:hover{
+    color:white;
+}
+header ul li a.active{
+    color:white;
+}
+header ul li ul{
+    position: absolute;
+    left: 0;
+    width: 200px;
+    display: none;
+}
+header ul li:hover ul{
+    display: block;
+}
+header ul li ul li{
+    left: 0;
+    top: 100%;
+    background:linear-gradient(to left,#EE5A24,#FFC321);
+    position: relative;
+    width: 100%;
+    box-shadow: 0px 3px 5px black;
+}
+@media (max-width:900px){
+    header{
+        padding: 10px 20px;
+    }
+    header nav{
+        position: absolute;
+        width: 100%;
+        top: 80px;
+        left: 0;
+        background:linear-gradient(to left,#EE5A24,#FFC321);
+        display: none;
+    }
+    header.active nav{
+        display: initial;
+    }
+    header nav ul li{
+        width: 100%;
+    }
+    header nav ul li ul{
+        position: relative;
+        width: 100%;
+    }
+    header nav ul li:hover ul li{
+        color: white;
+    }
+    .menuToggle{
+        position: relative;
+        width: 40px;
+        height: 50px;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .menuToggle::before{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        background-color: white;
+        transform: translateY(-12px);
+        box-shadow: 0 12px white;
+    }
+    .menuToggle::after{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        background-color: white;
+        transform: translateY(12px);
+    }
+    header.active .menuToggle::before{
+        transform: rotate(45deg);
+        box-shadow: 0 0 white;
+    }
+    header.active .menuToggle::after{
+        transform: rotate(315deg);
+    }
+}
+.bg-content{
+    background:url("image/Banner-1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 90vh;
+    width: 100%;
+}
+.bg-content .body-c{
+    padding:22rem 8rem;
+    height: 90vh;
+}
+.body-c h1{
+    padding-left: 5rem;
+    font-size:11rem;
+    font-family:serif;
+}
+.body-c .para{
+   width:700px;
+   min-height: 20px;
+   margin-left: 5rem;
+   font-family:cursive;
+   font-weight: 400;
+   font-size:1.8rem;
+   text-indent: 10px;
+   line-height: 20px;
+   margin-bottom: 28px;
+}
+/* button css ......*/
+.main-btn{
+    text-decoration: none;
+    position: relative;
+    color:white;
+    background: linear-gradient(to right,#EE5A24,#FFC321);
+    z-index: 1;
+    overflow: hidden;
+    border: 0.2rem solid white;
+    border-radius: 0% 2.5rem;
+    text-transform: uppercase;
+    padding: 1rem 3.5rem;
+    font-weight: 600;
+    font-size: 1.8rem;
+    margin-left:5rem;
+    letter-spacing: 0.2rem;
+    box-shadow: 3px 3px 4px black;
+    transition: all 0.2s;
+}
+.main-btn:hover{
+    background: white;
+    color: #EE5A24;
+    border:0.2rem solid #FFC321;
+}
+/*card .....*/
+.more{
+    font-size: 5rem;
+    font-weight: bolder;
+    position:relative;
+    justify-content: center;
+    margin-left: 37%;
+    z-index: 1;
+}
+.card{
+    margin: 0;
+    top:25px;
+    text-transform: capitalize;
+    transition: all 0.3 linear;
+}
+.card-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    width: 300px;
+    height: 455px;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    padding-top: 80px;
+    margin: 20px;
+    text-align: center;
+    letter-spacing: 1px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
+    overflow: hidden;
+    position: relative;
+    z-index: 0;
+}
+.box h3{
+    font-size: 35px;
+    padding: 20px 0;
+    color: #444;
+}
+.box p{
+    color: #777;
+    font-size: 15px;
+}
+.box button{
+    width: 140px;
+    height: 40px;
+    background-color: #444;
+    color: #fff;
+    border: none;
+    outline: none;
+    font-size: 17px;
+    cursor: pointer;
+    border-radius: 50px;
+    margin-top: 40px;
+}
+.box button:hover{
+    letter-spacing: 2px;
+    opacity: .8;
+}
+.box::before{
+    width: 100%;
+    height: 100%;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.box::after{
+    width: 100%;
+    height: 100%;
+    background-color: #FFC321;
+    background-image: linear-gradient(45deg, #FFC321 0%,#EE5A24 100%);
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -2;
+    clip-path: circle(18% at 20% 10%);
+    transition: .2s;
+}
+.box .count{
+    position: absolute;
+    top: 15px;
+    left:30px;
+    font-size: 50px;
+    font-weight: bolder;
+    color: #fff;
+}
+.box:hover::after{
+    clip-path: circle(100%);
+}
+.box:hover h3{
+    color: #fff;
+}
+.box:hover p{
+    color: #fff;
+}
+.box:hover button{
+    color: #333;
+    background-color: #fff;
+}
+.box:hover ::before{
+    background-color: rgba(0, 0, 0, .1);
+}
+/* footer css.....*/
+
+footer{
+    background: url("image/footer_bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:top center;
+    padding-top: 15rem;
+    padding-bottom: 0rem;
+}
+.footer-content{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    z-index: 1;
+}
+.footer-content h3{
+    font-size: 2.5rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+.footer-content p{
+    color: gray;
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+.socials li{
+    margin: 0 10px;
+}
+.socials a{
+    width: 3.5rem;
+    height: 3.5rem;
+    text-decoration: none;
+    line-height: 3.5rem;
+    margin: .5rem;
+    display: inline;
+    border:none;
+    text-align: center;
+    border-radius:none;
+    
+}
+.socials a i{
+    color:white;
+    font-size:3rem;
+    transition: color .3s ease;
+}
+.socials a:hover i{
+    color: #FFC321;
+    box-shadow: 0 0.625rem .9375rem 0 rgb(0 0 0 /10%); 
+    transform: translateY(-0.1875rem);
+}
+.footer-bottom{
+    background: black;
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+}
+.footer-bottom p{
+    color: white;
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+.footer-bottom span{
+    color: #FFC321;
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+/*about page set up*/
+.position-fix{
+    background: url("image/top-banner.jpg");
+    background-size:cover;
+    width: 100%;
+    height:25rem;
+}
+.about-bg h3{
+    font-size :5rem;
+    font-weight: 700;
+    padding-left:20rem;
+    padding-top:10rem;
+    padding-bottom:3rem;
+    letter-spacing: 1rem;
+}
+.about-bg h4{
+    margin-top:2rem;
+    font-size: 3rem;
+    font-weight: 600;
+    text-align: center;
+    justify-content: space-around;
+}
+.about-content{
+    margin-top:10rem;
+    font-size:2rem;
+    margin-bottom: 5rem;
+}
+.about-content img{
+    width:500px;
+    height: 480px;
+    float: left;
+}
+.about-content p{
+    justify-content: center;
+    line-height: 3rem;
+    margin-top: 8rem;
+    flex-wrap:wrap;
+    text-align: justify;
+
+}
+div .search img{
+    margin-top: 6rem;
+    width:500px;
+    height: 480px;
+    float:right;
+    margin-bottom:20rem; 
+}
+div .search p{
+    margin-top: 10rem;
+    padding-top: 9rem;
+    text-align: justify; 
+}
+/* fitness page .....*/
+.fit-pos{
+    background: url("image/fitness.jpg");
+    background-size:cover;
+    width: 100%;
+    height:25rem;
+}
+.fitness-bg h3{
+    font-size :5rem;
+    font-weight: 700;
+    color:#fff;
+    padding-left:20rem;
+    padding-top:10rem;
+    padding-bottom:3rem;
+    letter-spacing: 1rem;
+}
+.fitness-bg h4{
+    margin-top:2rem;
+    font-size: 3rem;
+    font-weight: 600;
+    padding-left:48%;
+    justify-content: space-around;
+}
+.fitness-content{
+    margin-top:10rem;
+    font-size: 1.5rem;
+}
+.info{
+    padding-left: 8rem;
+    padding-right: 5rem;
+}
+.fitness-content p{
+    align-items: center;
+    justify-content: center;
+    font-weight: bolder;
+}
+.fitness-content span{
+    text-align: justify;
+    padding-left: 3rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+.fitness-content h1{
+    margin-left: 2rem;
+}
+.left-c{
+    margin: 3rem;
+    justify-content: center;
+    font-family: 1rem;
+}
+.left-c img{
+    float: left;
+}
+.left-c p{
+    margin-top: 2.5rem;
+    text-align: justify;
+}
+.left-c span{
+    padding: 0;
+}
+.left-c .step{
+    font-weight:normal;
+}
+.right-c{
+    margin-top: 10rem;
+}
+.right-c img{
+    float:right;
+}
+.right-c p{
+    margin-top: 2.5rem;
+    margin-left:4rem;
+    text-align: justify;
+}
+.right-c span{
+    padding: 0;
+}
+.right-c .step{
+    font-weight:normal;
+}
+
+/* protein page.....*/
+.pro-fit{
+    background: url("image/proteins.jpg");
+    background-size:cover;
+    width: 100%;
+    height:25rem;
+}
+.box-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.box-content{
+    width: 270px;
+    height: 400px;
+    margin: 25px;
+    border: 2px solid rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+}
+.box-content h1{
+    font-size: 3rem;
+    font-weight:bolder;
+    text-align: center;
+    justify-content: center;
+}
+.box-img{
+    height:280px;
+    margin-bottom: 15px;
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
+}
+.box-content button{
+        width: 140px;
+        height: 40px;
+        background-color:black;
+        color: #fff;
+        border: none;
+        outline:none;
+        font-size: 17px;
+        cursor: pointer;
+        border-radius: 50px;
+        margin-top: 35px;
+        text-align: center;
+        margin-left:5.65rem;
+}
+.heading{
+    width: 100%;
+    color: black;
+}
+.box-content button:hover{
+    border: black;
+    letter-spacing: 2px;
+    opacity: .8;
+}
+
+.box-content:hover{
+    background:#777;
+    transform: scale(1.03);
+    transition: all 1s ease-out;
+}
+.pro1{
+    background: url("image/egg.jpg");
+    background-size: cover;
+}
+.pro2{
+    background: url("image/almonds.jpg");
+    background-size: cover;
+}
+.pro3{
+    background: url("image/chicken\ breast.jpg");
+    background-size: cover;
+}
+.pro4{
+    background: url("image/cottage\ cheese.jpg");
+    background-size: cover;
+}
+.pro5{
+    background: url("image/milk.jpg");
+    background-size: cover;
+}
+.pro6{
+    background: url("image/lentils.jpg");
+    background-size: cover;
+}
+.pro7{
+    background: url("image/lean\ beef.jpg");
+    background-size: cover;
+}
+.pro8{
+    background: url("image/fish.jpg");
+    background-size: cover;
+}
+/*  CARbohydrates .......*/
+.carbo-fit{ 
+    background: url("image/carbohydrates.jpg");
+    background-size:cover;
+    width: 100%;
+    height:25rem;
+}
+.pro9{
+    background: url("image/carbo/softpretzel.jpg");
+    background-size: cover;
+}
+.pro10{
+    background: url("image/carbo/honey.jpg");
+    background-size: cover;
+}
+.pro11{
+    background: url("image/carbo/canned\ fruit.jpg");
+    background-size: cover;
+}
+.pro12{
+    background: url("image/carbo/doughnuts.jpg");
+    background-size: cover;
+}
+.pro13{
+    background: url("image/carbo/soda.jpg");
+    background-size: cover;
+}
+.pro14{
+    background: url("image/carbo/potato\ chips.jpg");
+    background-size: cover;
+}
+.pro15{
+    background: url("image/carbo/gummy\ candy.jpg");
+    background-size: cover;
+}
+.pro16{
+    background: url("image/carbo/french\ fries.jpg");
+    background-size: cover;
+}
+/* vitamins ......*/
+.vitamins-fit{ 
+    background: url("image/vitamins.jpg");
+    background-size:cover;
+    width: 100%;
+    height: 25rem;
+}
+
+.pro17{
+    background: url("image/vitamins/sweet-potato.jpg");
+    background-size: cover;
+}
+.pro18{
+    background: url("image/vitamins/spinach.jpg");
+    background-size: cover;
+}
+.pro19{
+    background: url("image/vitamins/kale.jpg");
+    background-size: cover;
+}
+.pro20{
+    background: url("image/vitamins/carrots.jpg");
+    background-size: cover;
+}
+.pro21{
+    background: url("image/vitamins/rich\ grain.jpg");
+    background-size: cover;
+}
+.pro22{
+    background: url("image/vitamins/avocados.jpg");
+    background-size: cover;
+}
+.pro23{
+    background: url("image/vitamins/chicken.jpg");
+    background-size: cover;
+}
+.pro24{
+    background: url("image/vitamins/yogurt.jpg");
+    background-size: cover;
+}
+
+.pro25{
+    background: url("image/vitamins/guava.jpg");
+    background-size: cover;
+}
+.pro26{
+    background: url("image/vitamins/oranges.jpg");
+    background-size: cover;
+}
+.pro27{
+    background: url("image/vitamins/pineapple.jpg");
+    background-size: cover;
+}
+.pro28{
+    background: url("image/vitamins/strawberry.jpg");
+    background-size: cover;
+}
+.pro29{
+    background: url("image/vitamins/almond-milk.jpg");
+    background-size: cover;
+}
+.pro30{
+    background: url("image/vitamins/fly-agaric.jpg");
+    background-size: cover;
+}
+.pro31{
+    background: url("image/vitamins/salmon.jpg");
+    background-size: cover;
+}
+.pro32{
+    background: url("image/vitamins/pills.jpg");
+    background-size: cover;
+}
+/*supplements.......*/
+.supp-fit{ 
+    background: url("image/supplements.jpg");
+    background-size:cover;
+    width: 100%;
+    height: 25rem;
+}
+.pro33{
+    background: url("image/supplements/creatine_.jpg");
+    background-size: cover;
+}
+.pro34{
+    background: url("image/supplements/Electrolytes.jpg");
+    background-size: cover;
+}
+.pro35{
+    background: url("image/supplements/energy\ blend.jpg");
+    background-size: cover;
+}
+.pro36{
+    background: url("image/supplements/Fixuphealth.jpg");
+    background-size: cover;
+}
+.pro37{
+    background: url("image/supplements/Hyrdafuel.jpg");
+    background-size: cover;
+}
+.pro38{
+    background: url("image/supplements/ignitor.jpg");
+    background-size: cover;
+}
+.pro39{
+    background: url("image/supplements/noble.jpg");
+    background-size: cover;
+}
+.pro40{
+    background: url("image/supplements/vampire.jpg");
+    background-size: cover;
+}
+/*Diet recipes......*/
+/*breakfast ........*/
+.break-fit{ 
+    background: url("image/supplements.jpg");
+    background-size:cover;
+    width: 100%;
+    height: 25rem;
+}
+.pro41{
+    background: url("image/break_fast/poha.png");
+    background-size: cover;
+}
+.pro42{
+    background: url("image/break_fast/idli.jpg");
+    background-size: cover;
+}
+.pro43{
+    background: url("image/break_fast/paneer_paratha.png");
+    background-size: cover;
+}
+.pro44{
+    background: url("image/break_fast/sandwich.png");
+    background-size: cover;
+}
+.pro45{
+    background: url("image/break_fast/sprout.jpg");
+    background-size: cover;
+}
+.pro46{
+    background: url("image/break_fast/basen_chila.jpg");
+    background-size: cover;
+}
+.pro47{
+    background: url("image/break_fast/parath_with_curd.png");
+    background-size: cover;
+}
+.pro48{
+    background: url("image/break_fast/upma.png");
+    background-size: cover;
+}
+/* Dinner .......*/
+.dinner-fit{ 
+    background: url("image/supplements.jpg");
+    background-size:cover;
+    width: 100%;
+    height: 25rem;
+}
+.pro49{
+    background: url("image/dinner/dal-khichdi-kachumber-salad.webp");
+    background-size: cover;
+}
+.pro50{
+    background: url("image/dinner/damn\ tasty\ dal.webp");
+    background-size: cover;
+}
+.pro51{
+    background: url("image/dinner/mango-curry.webp");
+    background-size: cover;
+}
+.pro52{
+    background: url("image/dinner/paneer-tikka.webp");
+    background-size: cover;
+}
+.pro53{
+    background: url("image/dinner/Red-Lentil-Dal-.webp");
+    background-size: cover;
+}
+.pro54{
+    background: url("image/dinner/saag-paneer.webp");
+    background-size: cover;
+}
+.pro55{
+    background: url("image/dinner/vegetable-bhuna.webp");
+    background-size: cover;
+}
+.pro56{
+    background: url("image/dinner/veggie-chunks-curry-TVP.webp");
+    background-size: cover;
+}
+/* lunch........*/
+.lunch-fit{ 
+    background: url("image/supplements.jpg");
+    background-size:cover;
+    width: 100%;
+    height: 25rem;
+}
+.pro57{
+    background: url("image/lunch/bhindi.webp");
+    background-size: cover;
+}
+.pro58{
+    background: url("image/lunch/chana-kulcha.webp");
+    background-size: cover;
+}
+.pro59{
+    background: url("image/lunch/chicken.jpg");
+    background-size: cover;
+}
+.pro60{
+    background: url("image/lunch/dgdlkf8_dal-tadka.webp");
+    background-size: cover;
+}
+.pro61{
+    background: url("image/lunch/kadhi.webp");
+    background-size: cover;
+}
+.pro62{
+    background: url("image/lunch/paneer-kofta.webp");
+    background-size: cover;
+}
+.pro63{
+    background: url("image/lunch/goan-egg-curry.jpg");
+    background-size: cover;
+}
+.pro64{
+    background: url("image/lunch/rajma.webp");
+    background-size: cover;
+}
+/* sub menu for proteins */
+.img-size{
+    width:800px;
+    height:60vh;
+    margin-top: 10rem;
+    margin-left: 30rem;
+}
+.sub-content{
+    white-space: pre;
+    margin-left: 15%;
+    width: 80%;
+    font-size:18px;
+    font-family: Times New Roman;
+    justify-content: center;
+    text-align:justify;
+    line-height:25px;
+}
+.next-button{
+    white-space: pre;
+    text-decoration: none;
+    position: relative;
+    color:white;
+    background: linear-gradient(to right,#EE5A24,#FFC321);
+    z-index: 1;
+    overflow: hidden;
+    border: 0.2rem solid white;
+    border-radius:10px;
+    text-transform: uppercase;
+    padding: 1rem 3.5rem;
+    font-weight: 600;
+    font-size: 1.8rem;
+    margin-left:5rem;
+    letter-spacing: 0.2rem;
+    box-shadow: 3px 3px 4px black;
+    transition: all 0.2s;
+}
+.next-button:hover{
+    background: white;
+    color: #EE5A24;
+    border:0.2rem solid #FFC321;
+}
+.white{
+    white-space: pre;
+    width: 100%;
+}
+
+

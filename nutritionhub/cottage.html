@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cottage cheese</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+
+<body>
+    <header class="fixed">
+        <div class="logo">
+            <h1>Nourish<span>Nation</span></h1>
+        </div>
+      <div class="menuToggle"></div>
+      <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="fitness.html">Fitness</a></li>
+            <li><a href="#"class="active">Nutrition</a>
+                <ul>
+                    <li><a href="protein.html"class="active">Protien</a></li>
+                    <li><a href="carbohydrates.html">Carbohydrates</a></li>
+                    <li><a href="vitamins.html">Vitamins</a></li>
+                    <li><a href="supplements.html">Supplements</a></li>
+                </ul></li>
+            <li><a href="#">Diet Recipes</a>
+                <ul>
+                    <li><a href="break_fast.html">Break Fast</a></li>
+                    <li><a href="dinner.html">Dinner</a></li>
+                    <li><a href="lunch.html">Lunch</a></li>
+                </ul>
+            </li>
+        </ul>
+      </nav>
+    </header>
+        <section>
+            <img src="image/cottage cheese.jpg" alt="cottage cheese image" class="img-size">
+            <div class="sub-content">
+                Cottage cheese is a type of cheese known for its creamy and slightly tangy flavor. It is made from the curds of cow's milk 
+and has a mild taste that pairs well with various ingredients. Here is some information about cottage cheese, including its protein content 
+and different ways to enjoy it:
+
+1. Protein content: Cottage cheese is a good source of protein, making it popular among those seeking to increase their protein intake. The 
+protein content can vary slightly depending on the brand and type, but on average, a half-cup (113 grams) serving of cottage cheese contains 
+around 13-15 grams of protein.
+
+2. Nutritional profile: Cottage cheese is not only rich in protein but also provides several other essential nutrients. It is a good source 
+of calcium, phosphorus, selenium, vitamin B12, and riboflavin. It also contains some healthy fats and is relatively low in carbohydrates.
+
+3. Eating cottage cheese: Cottage cheese is a versatile ingredient and can be enjoyed in different ways:
+
+   - Plain: Cottage cheese can be eaten plain, either on its own or as a side dish. It has a creamy texture and a mild taste. You can eat it 
+   as a snack or incorporate it into meals as a source of protein.
+
+   - Sweet toppings: Cottage cheese pairs well with sweet toppings. You can add fresh or dried fruits, such as berries, peaches, or pineapple,
+    as well as a drizzle of honey or maple syrup for a sweet and protein-packed snack.
+
+   - Savory toppings: Cottage cheese can also be enjoyed with savory toppings. Sprinkle it with herbs and spices like black pepper, chives, 
+   or dill for added flavor. You can also add chopped vegetables like cucumbers, tomatoes, or bell peppers for a refreshing salad.
+
+   - Mix-ins: Cottage cheese can be used as a base for various mix-ins. You can add ingredients like nuts, seeds, granola, or dark chocolate 
+   chips for added texture and flavor.
+
+   - Smoothies: Cottage cheese can be blended into smoothies to boost their protein content and add creaminess. Combine it with fruits, 
+   vegetables, and a liquid of your choice for a nutritious and satisfying beverage.
+
+   - Cooking and baking: Cottage cheese can be used as an ingredient in recipes. It can be incorporated into casseroles, pasta dishes, 
+   pancakes, and even baked goods like cheesecakes or muffins.
+
+Cottage cheese is widely available in different fat content options, such as full-fat, reduced-fat, and fat-free. Choose the option that 
+aligns with your dietary preferences and goals.
+
+It's important to note that individual dietary needs and preferences may vary. If you have any specific concerns or dietary restrictions, 
+it's always a good idea to consult with a healthcare professional or registered dietitian for personalized guidance.
+            </div>
+        </section>
+        <center>
+            <div class="white"><a href="chicken Breast.html"class="next-button">Previous</a>         <a href="milk.html"class="next-button">  Next  </a>
+            </div>
+        </center>
+    <footer>
+            <div class="footer-content">
+                <h3> NurishNation</h3>
+                <p>Nutrition is the biochemical and physiological process by which an organism uses food to support its life.
+                     It provides organisms with nutrients</p>
+                <ul class="socials">
+                    <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-google-plus"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <p>copyright &copy;2023<span> NurishNation </span></p>
+            </div>
+    </footer>
+</body>
+<script>
+    let menuToggle =document.querySelector('.menuToggle');
+   let header = document.querySelector('header');
+   menuToggle.onclick = function(){
+       header.classList.toggle('active');
+   }
+</script>
+</html>

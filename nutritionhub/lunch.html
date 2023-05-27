@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lunch</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+
+<body>
+    <header class="fixed">
+        <div class="logo">
+            <h1>Nourish<span>Nation</span></h1>
+        </div>
+      <div class="menuToggle"></div>
+      <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="fitness.html">Fitness</a></li>
+            <li><a href="#">Nutrition</a>
+                <ul>
+                    <li><a href="protein.html">Protien</a></li>
+                    <li><a href="carbohydrates.html">Carbohydrates</a></li>
+                    <li><a href="vitamins.html">Vitamins</a></li>
+                    <li><a href="supplements.html">Supplements</a></li>
+                </ul></li>
+            <li><a href="#"class="active">Diet Recipes</a>
+                <ul>
+                    <li><a href="break_fast.html"class="active">Break Fast</a></li>
+                    <li><a href="dinner.html">Dinner</a></li>
+                    <li><a href="lunch.html">Lunch</a></li>
+                </ul>
+            </li>
+        </ul>
+      </nav>
+    </header>
+    <section class="supplements-main">
+        <div class="about-bg">
+            <div class="lunch-fit"><h3>Lunch</h3></div>
+            <h4> Recipes for Lunch</h4>
+            <div class="box-container">
+                <div class="box-content">
+                    <div class="box-img pro57"></div>
+                    <h1>Masala bhindi</h1>
+                    <a href="#"><button> More info</button></a>
+                </div>
+                <div class="box-content">
+                    <div class="box-img pro58"></div>
+                    <h1> Chana kulcha</h1>
+                    <a href="#"><button> More info</button></a>
+                </div>
+                <div class="box-content">
+                    <div class="box-img pro59"></div>
+                    <h1>Dahi chicken</h1>
+                    <a href="#"><button> More info</button></a>
+                </div><div class="box-content">
+                    <div class="box-img pro60"></div>
+                    <h1>Pungabi daal tadka</h1>
+                    <a href="#"><button> More info</button></a>
+                </div>
+                <div class="box-content">
+                    <div class="box-img pro61"></div>
+                    <h1> Gujarati kadhi</h1>
+                    <a href="#"><button> More info</button></a>
+                </div>
+                <div class="box-content">
+                    <div class="box-img pro62"></div>
+                    <h1>Panner kofta</h1>
+                    <a href="#"><button> More info</button></a>
+                </div>
+                <div class="box-content">
+                    <div class="box-img pro63"></div>
+                    <h1> saahi egg curry </h1>
+                    <a href="#"><button> More info</button></a>
+                </div><div class="box-content">
+                    <div class="box-img pro64"></div>
+                    <h1> Kashmiri rajma </h1>
+                    <a href="#"><button> More info</button></a>
+                </div>
+                    
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+            <div class="footer-content">
+                <h3> NurishNation</h3>
+                <p>Nutrition is the biochemical and physiological process by which an organism uses food to support its life.
+                     It provides organisms with nutrients</p>
+                <ul class="socials">
+                    <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-google-plus"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <p>copyright &copy;2023<span> NurishNation </span></p>
+            </div>
+    </footer>
+</body>
+<script>
+    let menuToggle =document.querySelector('.menuToggle');
+   let header = document.querySelector('header');
+   menuToggle.onclick = function(){
+       header.classList.toggle('active');
+   }
+</script>
+</html>

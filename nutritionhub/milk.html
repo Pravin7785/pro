@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>milk</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+
+<body>
+    <header class="fixed">
+        <div class="logo">
+            <h1>Nourish<span>Nation</span></h1>
+        </div>
+      <div class="menuToggle"></div>
+      <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="fitness.html">Fitness</a></li>
+            <li><a href="#"class="active">Nutrition</a>
+                <ul>
+                    <li><a href="protein.html"class="active">Protien</a></li>
+                    <li><a href="carbohydrates.html">Carbohydrates</a></li>
+                    <li><a href="vitamins.html">Vitamins</a></li>
+                    <li><a href="supplements.html">Supplements</a></li>
+                </ul></li>
+            <li><a href="#">Diet Recipes</a>
+                <ul>
+                    <li><a href="break_fast.html">Break Fast</a></li>
+                    <li><a href="dinner.html">Dinner</a></li>
+                    <li><a href="lunch.html">Lunch</a></li>
+                </ul>
+            </li>
+        </ul>
+      </nav>
+    </header>
+        <section>
+            <img src="image/milk.jpg" alt="milk image" class="img-size">
+            <div class="sub-content">
+                Milk is a nutrient-rich liquid produced by mammals, most commonly from cows, and is widely consumed worldwide. Here is some 
+information about milk, including its protein content and different ways to consume it:
+
+1. Protein content: Milk is a good source of protein, containing two main types: casein and whey protein. The protein content in milk can 
+vary depending on the type and fat content. On average, one cup (244 grams) of cow's milk contains about 8 grams of protein. Milk from other
+ animals, such as goats or sheep, may have slightly different protein compositions.
+
+2. Nutritional profile: In addition to protein, milk is a rich source of other essential nutrients. It provides calcium, phosphorus, vitamin 
+D, vitamin B12, riboflavin, and potassium. Milk also contains carbohydrates (in the form of lactose), healthy fats, and various vitamins and 
+minerals that support overall health.
+
+3. Drinking milk: Milk can be consumed in several ways:
+
+   - Cold milk: Drinking a glass of cold milk on its own is a common way to enjoy it. You can drink it plain or choose flavored milk options,
+    such as chocolate or strawberry milk.
+
+   - Warm milk: Some people prefer warm milk, especially before bedtime, as it is often associated with relaxation. Warm milk can be enjoyed 
+   plain or with added flavors like honey, cinnamon, or vanilla.
+
+   - Milkshakes and smoothies: Milk serves as a base for delicious milkshakes and smoothies. Blend milk with fruits, ice cream, yogurt, or 
+   protein powders to create a nutritious and flavorful beverage.
+
+   - Cereal and oatmeal: Milk is commonly poured over cereals like cornflakes, muesli, or granola, adding flavor and texture. It can also be 
+   used as a liquid when preparing oatmeal or other hot cereals.
+
+   - Coffee and tea: Milk is often added to coffee or tea to lighten the flavor and provide creaminess. You can choose from different types 
+   of milk, including whole milk, low-fat milk, or plant-based alternatives like almond milk or soy milk.
+
+   - Cooking and baking: Milk is a versatile ingredient used in various recipes, such as soups, sauces, desserts, and baked goods. It can 
+   contribute to the texture and flavor of dishes.
+
+It's important to note that individual dietary needs and preferences may vary. If you have any specific concerns or dietary restrictions, 
+it's advisable to consult with a healthcare professional or registered dietitian for personalized guidance on incorporating milk into your 
+diet.
+            </div>
+        </section>
+        <center>
+            <div class="white"><a href="cottage.html"class="next-button">Previous</a>         <a href="lentils.html"class="next-button">  Next  </a>
+            </div>
+        </center>
+    <footer>
+            <div class="footer-content">
+                <h3> NurishNation</h3>
+                <p>Nutrition is the biochemical and physiological process by which an organism uses food to support its life.
+                     It provides organisms with nutrients</p>
+                <ul class="socials">
+                    <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-google-plus"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <p>copyright &copy;2023<span> NurishNation </span></p>
+            </div>
+    </footer>
+</body>
+<script>
+    let menuToggle =document.querySelector('.menuToggle');
+   let header = document.querySelector('header');
+   menuToggle.onclick = function(){
+       header.classList.toggle('active');
+   }
+</script>
+</html>

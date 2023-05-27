@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>soda</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+
+<body>
+    <header class="fixed">
+        <div class="logo">
+            <h1>Nourish<span>Nation</span></h1>
+        </div>
+      <div class="menuToggle"></div>
+      <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="fitness.html">Fitness</a></li>
+            <li><a href="#"class="active">Nutrition</a>
+                <ul>
+                    <li><a href="protein.html">Protien</a></li>
+                    <li><a href="carbohydrates.html"class="active">Carbohydrates</a></li>
+                    <li><a href="vitamins.html">Vitamins</a></li>
+                    <li><a href="supplements.html">Supplements</a></li>
+                </ul></li>
+            <li><a href="#">Diet Recipes</a>
+                <ul>
+                    <li><a href="break_fast.html">Break Fast</a></li>
+                    <li><a href="dinner.html">Dinner</a></li>
+                    <li><a href="lunch.html">Lunch</a></li>
+                </ul>
+            </li>
+        </ul>
+      </nav>
+    </header>
+        <section>
+            <img src="image/carbo/soda.jpg" alt="soda image" class="img-size">
+            <div class="sub-content">
+                            Soda, also known as carbonated soft drinks or fizzy beverages, is a type of flavored beverage that contains carbonated water, 
+                sweeteners, and various additives. Here's some information about soda in terms of carbohydrates and how to consume it:
+
+                1. Carbohydrate content: Soda is primarily made up of water and sweeteners, which provide carbohydrates in the form of sugars. The exact 
+                carbohydrate content can vary depending on the brand and type of soda. On average, a 12-ounce can of regular soda contains around 38-45
+                grams of carbohydrates, with most of it coming from added sugars.
+                
+                2. Nutritional profile: Soda is typically low in nutrients and can be high in calories and added sugars. It provides little to no nutritional
+                value and is often considered empty calories. Regular consumption of sugary sodas has been linked to various health concerns, including weight gain, tooth decay, and an increased risk of chronic diseases like type 2 diabetes and heart disease.
+                
+                3. Drinking soda:
+                
+                   - As a refreshing beverage: Soda is often consumed as a refreshing and thirst-quenching drink. It can be served chilled or over ice.
+                
+                   - On its own: Soda is typically consumed directly from the can or poured into a glass. It is enjoyed for its effervescence and the 
+                     combination of flavors provided by the sweeteners and additives.
+                
+                   - Mixed with other beverages: Soda can be used as a mixer in various cocktails or combined with fruit juices or flavored syrups to 
+                     create unique beverage combinations.
+                
+                   - Served with meals: Some people enjoy soda as a beverage choice to accompany meals. However, it's important to note that regular 
+                     consumption of sugary beverages with meals can contribute to excess calorie intake and may not be the healthiest choice.
+                
+                   - Moderation and healthier alternatives: Due to the high sugar content and potential health risks associated with regular soda consumption, 
+                     it is generally recommended to limit or avoid it. Choosing healthier alternatives like water, unsweetened tea, infused water, or sparkling
+                     water with no added sugars can be beneficial for overall health.
+                
+                It's important to be mindful of your soda consumption due to its high sugar content and potential negative health effects. Opting for healthier 
+                beverage choices can help reduce your intake of added sugars and improve your overall nutritional profile.
+            </div>
+        </section>
+        <center>
+            <div class="white"><a href="Doughnuts.html"class="next-button">Previous</a>         <a href="potato_chips.html"class="next-button">  Next  </a>
+            </div>
+        </center>
+    <footer>
+            <div class="footer-content">
+                <h3> NurishNation</h3>
+                <p>Nutrition is the biochemical and physiological process by which an organism uses food to support its life.
+                     It provides organisms with nutrients</p>
+                <ul class="socials">
+                    <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-google-plus"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <p>copyright &copy;2023<span> NurishNation </span></p>
+            </div>
+    </footer>
+</body>
+<script>
+    let menuToggle =document.querySelector('.menuToggle');
+   let header = document.querySelector('header');
+   menuToggle.onclick = function(){
+       header.classList.toggle('active');
+   }
+</script>
+</html>

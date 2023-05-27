@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>French fris</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+
+<body>
+    <header class="fixed">
+        <div class="logo">
+            <h1>Nourish<span>Nation</span></h1>
+        </div>
+      <div class="menuToggle"></div>
+      <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="fitness.html">Fitness</a></li>
+            <li><a href="#"class="active">Nutrition</a>
+                <ul>
+                    <li><a href="protein.html">Protien</a></li>
+                    <li><a href="carbohydrates.html"class="active">Carbohydrates</a></li>
+                    <li><a href="vitamins.html">Vitamins</a></li>
+                    <li><a href="supplements.html">Supplements</a></li>
+                </ul></li>
+            <li><a href="#">Diet Recipes</a>
+                <ul>
+                    <li><a href="break_fast.html">Break Fast</a></li>
+                    <li><a href="dinner.html">Dinner</a></li>
+                    <li><a href="lunch.html">Lunch</a></li>
+                </ul>
+            </li>
+        </ul>
+      </nav>
+    </header>
+        <section>
+            <img src="image/carbo/french fries.jpg" alt=" french fries image" class="img-size">
+            <div class="sub-content">
+                        French fries are a popular side dish made from potatoes that are cut into long, thin strips and fried until crispy. Here's some 
+                        information about French fries in terms of carbohydrates and how to consume them:
+
+                1. Carbohydrate content: French fries are primarily made from potatoes, which are a starchy vegetable containing carbohydrates. The exact 
+                carbohydrate content of French fries can vary depending on the size, thickness, and cooking method. On average, a medium-sized serving of
+                French fries (about 117 grams or 4 ounces) can contain approximately 40-50 grams of carbohydrates.
+                
+                2. Nutritional profile: While potatoes themselves are a good source of nutrients like vitamin C, potassium, and dietary fiber, the nutritional 
+                value of French fries can be compromised by the frying process and added ingredients. Commercially prepared French fries are often high in calories, unhealthy fats, sodium, and may contain additives or preservatives. They are typically low in fiber and other essential nutrients.
+                
+                3. Eating French fries:
+                
+                   - Standalone side dish: French fries are commonly enjoyed as a side dish with burgers, sandwiches, or other main courses. They can be 
+                   served on their own or with condiments like ketchup, mayonnaise, or aioli for dipping.
+                
+                   - Toppings and variations: French fries can be topped with various ingredients to create different flavors and textures. For example,
+                   they can be loaded with cheese, bacon, sour cream, or chili for a hearty and indulgent meal.
+                
+                   - Sharing and social occasions: French fries are often shared among friends or family during social gatherings, picnics, or sporting 
+                   events. They are a popular choice for fast food meals and takeaway options.
+                
+                   - Homemade alternatives: While commercially prepared French fries may be high in unhealthy fats, you can opt for healthier alternatives
+                    by baking or air-frying homemade French fries. This reduces the amount of added fats and calories.
+                
+                   - Portion control: Due to their high calorie and fat content, it's important to practice portion control when consuming French fries. 
+                   It's advisable to enjoy them in moderation and be mindful of serving sizes to avoid excessive calorie intake.
+                
+                It's important to note that regular consumption of deep-fried foods, including French fries, can contribute to weight gain, unhealthy 
+                eating habits, and an increased risk of chronic diseases. If you're looking for a healthier alternative, consider baking or air-frying 
+                potato wedges or sweet potato fries at home using minimal oil. Additionally, balancing your diet with a variety of fruits, vegetables, 
+                whole grains, and lean proteins is essential for overall health. 
+            </div>
+        </section>
+        <center>
+            <div class="white"><a href="gummy_candy.html"class="next-button">Previous</a>         <a href="soft_pretzel.html"class="next-button">  Next  </a>
+            </div>
+        </center>
+    <footer>
+            <div class="footer-content">
+                <h3> NurishNation</h3>
+                <p>Nutrition is the biochemical and physiological process by which an organism uses food to support its life.
+                     It provides organisms with nutrients</p>
+                <ul class="socials">
+                    <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-google-plus"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <p>copyright &copy;2023<span> NurishNation </span></p>
+            </div>
+    </footer>
+</body>
+<script>
+    let menuToggle =document.querySelector('.menuToggle');
+   let header = document.querySelector('header');
+   menuToggle.onclick = function(){
+       header.classList.toggle('active');
+   }
+</script>
+</html>

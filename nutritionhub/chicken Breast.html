@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chicken breast</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+
+<body>
+    <header class="fixed">
+        <div class="logo">
+            <h1>Nourish<span>Nation</span></h1>
+        </div>
+      <div class="menuToggle"></div>
+      <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="fitness.html">Fitness</a></li>
+            <li><a href="#"class="active">Nutrition</a>
+                <ul>
+                    <li><a href="protein.html"class="active">Protien</a></li>
+                    <li><a href="carbohydrates.html">Carbohydrates</a></li>
+                    <li><a href="vitamins.html">Vitamins</a></li>
+                    <li><a href="supplements.html">Supplements</a></li>
+                </ul></li>
+            <li><a href="#">Diet Recipes</a>
+                <ul>
+                    <li><a href="break_fast.html">Break Fast</a></li>
+                    <li><a href="dinner.html">Dinner</a></li>
+                    <li><a href="lunch.html">Lunch</a></li>
+                </ul>
+            </li>
+        </ul>
+      </nav>
+    </header>
+        <section>
+            <img src="image/chicken breast.jpg" alt="chicken breastimage" class="img-size">
+            <div class="sub-content">
+                Chicken breast is a popular lean protein source that is widely consumed and enjoyed in various cuisines. Here is some 
+information about chicken breast, including its protein content and different ways to prepare and enjoy it:
+
+1. Protein content: Chicken breast is known for its high protein content. A 3.5-ounce (100-gram) serving of cooked chicken breast provides 
+approximately 31 grams of protein. It is a complete protein, meaning it contains all the essential amino acids your body needs.
+
+2. Nutritional profile: In addition to protein, chicken breast is also low in fat, particularly if you remove the skin before cooking. It is 
+a good source of vitamins and minerals, including vitamin B6, vitamin B12, niacin, selenium, and phosphorus.
+
+3. Cooking methods: Chicken breast can be prepared in various ways to suit your taste preferences. Here are a few common cooking methods:
+
+   - Grilling: Marinate the chicken breast in your choice of seasonings, then grill it on medium-high heat until it reaches an internal 
+   temperature of 165°F (74°C). This method imparts a smoky flavor and gives the chicken a slightly charred exterior.
+
+   - Baking: Season the chicken breast with herbs, spices, or a marinade of your choice, then bake it in the oven at around 400°F (200°C) 
+   for about 20-25 minutes or until the internal temperature reaches 165°F (74°C). Baking keeps the chicken moist and allows for easy meal preparation.
+
+   - Pan-searing: Heat a little oil in a skillet over medium-high heat, then cook the seasoned chicken breast for about 6-8 minutes on each 
+   side until it is golden brown and reaches the recommended internal temperature.
+
+   - Poaching: Place the chicken breast in a pot with enough liquid (such as broth or water) to cover it. Simmer gently until the chicken is
+    cooked through and no longer pink inside. This method helps retain moisture in the meat.
+
+4. Serving ideas: Cooked chicken breast can be enjoyed in numerous ways:
+
+   - As a main dish: Serve grilled, baked, or pan-seared chicken breast as the centerpiece of a meal. Pair it with steamed vegetables, whole 
+   grains like brown rice or quinoa, and a side salad for a well-rounded plate.
+
+   - Salads: Slice or dice cooked chicken breast and add it to salads for a protein boost. It pairs well with greens, vegetables, fruits, and
+    various dressings.
+
+   - Sandwiches and wraps: Slice or shred cooked chicken breast and use it as a filling in sandwiches, wraps, or pitas. Combine it with fresh 
+   vegetables, spreads, and condiments for a satisfying meal.
+
+   - Stir-fries: Cut cooked chicken breast into strips and stir-fry it with vegetables and sauces for a quick and nutritious meal. Serve it
+    over rice or noodles.
+
+Remember to handle raw chicken properly to prevent cross-contamination and cook it thoroughly to an internal temperature of 165°F (74°C) to 
+ensure food safety. It's also essential to consider individual dietary needs and preferences when incorporating chicken breast into your diet.
+ If you have any specific concerns or dietary restrictions, consulting with a healthcare professional or registered dietitian is recommended.
+            </div>
+        </section>
+        <center>
+            <div class="white"><a href="almonds.html"class="next-button">Previous</a>         <a href="cottage.html"class="next-button">  Next  </a>
+            </div>
+        </center>
+    <footer>
+            <div class="footer-content">
+                <h3> NurishNation</h3>
+                <p>Nutrition is the biochemical and physiological process by which an organism uses food to support its life.
+                     It provides organisms with nutrients</p>
+                <ul class="socials">
+                    <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-google-plus"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <p>copyright &copy;2023<span> NurishNation </span></p>
+            </div>
+    </footer>
+</body>
+<script>
+    let menuToggle =document.querySelector('.menuToggle');
+   let header = document.querySelector('header');
+   menuToggle.onclick = function(){
+       header.classList.toggle('active');
+   }
+</script>
+</html>

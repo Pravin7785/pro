@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>canned fruit</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+
+<body>
+    <header class="fixed">
+        <div class="logo">
+            <h1>Nourish<span>Nation</span></h1>
+        </div>
+      <div class="menuToggle"></div>
+      <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="fitness.html">Fitness</a></li>
+            <li><a href="#"class="active">Nutrition</a>
+                <ul>
+                    <li><a href="protein.html">Protien</a></li>
+                    <li><a href="carbohydrates.html"class="active">Carbohydrates</a></li>
+                    <li><a href="vitamins.html">Vitamins</a></li>
+                    <li><a href="supplements.html">Supplements</a></li>
+                </ul></li>
+            <li><a href="#">Diet Recipes</a>
+                <ul>
+                    <li><a href="break_fast.html">Break Fast</a></li>
+                    <li><a href="dinner.html">Dinner</a></li>
+                    <li><a href="lunch.html">Lunch</a></li>
+                </ul>
+            </li>
+        </ul>
+      </nav>
+    </header>
+        <section>
+            <img src="image/carbo/canned fruit.jpg" alt="canned fruits image" class="img-size">
+            <div class="sub-content">
+                            Canned fruits are fruits that have been preserved and packaged in cans, often in their own juices or syrup. Here's some information
+                 about canned fruits in terms of carbohydrates and how to enjoy them:
+
+                1. Carbohydrate content: Canned fruits, similar to fresh fruits, contain carbohydrates in the form of natural sugars. The exact carbohydrate
+                 content can vary depending on the type of fruit and the preservation method used. Generally, canned fruits contain around 15-20 grams of
+                  carbohydrates per 100 grams, depending on the specific fruit and preparation.
+                
+                2. Nutritional profile: Canned fruits retain many of the nutrients found in fresh fruits, including vitamins, minerals, and dietary fiber.
+                 However, it's important to note that some of the heat processing and preservation methods used in canning may cause a slight loss of certain
+                  heat-sensitive nutrients, such as vitamin C.
+                
+                3. Types of canned fruits: A variety of fruits can be found in canned form, including peaches, pears, pineapple, mandarin oranges, mixed 
+                fruit cocktail, cherries, and more. You can often find them packed in water, their own juice, or light syrup. Opting for fruits packed in 
+                their own juice or water can reduce added sugar intake.
+                
+                4. Eating canned fruits:
+                
+                   - Straight from the can: Canned fruits can be enjoyed straight from the can as a quick and convenient snack. Simply open the can and 
+                     use a spoon to enjoy the fruit.
+                
+                   - Added to recipes: Canned fruits can be incorporated into various recipes. They can be used in desserts like fruit salads, cobblers, 
+                     pies, and cakes. They can also be added to oatmeal, yogurt, or smoothies for extra flavor and natural sweetness.
+                
+                   - Toppings: Canned fruits can serve as delicious toppings for pancakes, waffles, French toast, ice cream, or cereal.
+                
+                   - Pairings: Canned fruits can be paired with other foods. For example, you can combine canned peaches with cottage cheese or mix canned
+                      pineapple into savory dishes like stir-fries or grilled chicken skewers.
+                
+                When selecting canned fruits, it's essential to read the labels and choose options that are packed in their own juice or water, rather than
+                heavy syrup, to reduce added sugars. If you have dietary restrictions or concerns, such as watching your sugar intake or following a 
+                low-sodium diet, you may want to choose canned fruits with no added sugars or opt for fresh or frozen fruits as alternatives.
+            </div>
+        </section>
+        <center>
+            <div class="white"><a href="honey.html"class="next-button">Previous</a>         <a href="Doughnuts.html"class="next-button">  Next  </a>
+            </div>
+        </center>
+    <footer>
+            <div class="footer-content">
+                <h3> NurishNation</h3>
+                <p>Nutrition is the biochemical and physiological process by which an organism uses food to support its life.
+                     It provides organisms with nutrients</p>
+                <ul class="socials">
+                    <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-google-plus"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <p>copyright &copy;2023<span> NurishNation </span></p>
+            </div>
+    </footer>
+</body>
+<script>
+    let menuToggle =document.querySelector('.menuToggle');
+   let header = document.querySelector('header');
+   menuToggle.onclick = function(){
+       header.classList.toggle('active');
+   }
+</script>
+</html>

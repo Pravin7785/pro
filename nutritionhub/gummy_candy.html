@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gummy candy</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+
+<body>
+    <header class="fixed">
+        <div class="logo">
+            <h1>Nourish<span>Nation</span></h1>
+        </div>
+      <div class="menuToggle"></div>
+      <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="fitness.html">Fitness</a></li>
+            <li><a href="#"class="active">Nutrition</a>
+                <ul>
+                    <li><a href="protein.html">Protien</a></li>
+                    <li><a href="carbohydrates.html" class="active">Carbohydrates</a></li>
+                    <li><a href="vitamins.html">Vitamins</a></li>
+                    <li><a href="supplements.html">Supplements</a></li>
+                </ul></li>
+            <li><a href="#">Diet Recipes</a>
+                <ul>
+                    <li><a href="break_fast.html">Break Fast</a></li>
+                    <li><a href="dinner.html">Dinner</a></li>
+                    <li><a href="lunch.html">Lunch</a></li>
+                </ul>
+            </li>
+        </ul>
+      </nav>
+    </header>
+        <section>
+            <img src="image/carbo/gummy candy.jpg" alt=" gummy candy image" class="img-size">
+            <div class="sub-content">
+                         Gummy candy is a type of chewy confectionery that is usually made with sugar, gelatin, flavorings, and colorings. They come in a 
+                variety of shapes, sizes, and flavors, and are known for their soft and gummy texture. Here's some information about gummy candy in terms 
+                of carbohydrates and how to consume them:
+
+                1. Carbohydrate content: Gummy candies are primarily composed of carbohydrates, mainly in the form of sugar. The exact carbohydrate content
+                 can vary depending on the brand, size, and ingredients used. On average, a serving of gummy candy (about 10-15 pieces or 40 grams) can 
+                 contain approximately 30-40 grams of carbohydrates, with most of it coming from sugar.
+                
+                2. Nutritional profile: Gummy candies are generally low in nutrients and provide little to no nutritional value. They are high in calories
+                 and sugars, and may contain artificial additives. Due to their low fiber content, gummy candies are rapidly absorbed in the body, leading
+                  to a quick rise in blood sugar levels.
+                
+                3. Eating gummy candy:
+                
+                   - As a sweet treat: Gummy candies are typically consumed as a sweet indulgence or treat. They can be enjoyed straight from the package, 
+                     one piece at a time.
+                
+                   - Snacking: Gummy candies can be eaten as a standalone snack or combined with other snacks like popcorn, nuts, or pretzels for flavor 
+                     and texture variety.
+                
+                   - Sharing and occasions: Gummy candies are often shared among friends or family during parties, movie nights, or special occasions. 
+                     They are commonly found in candy dishes or used as decorations on cakes or desserts.
+                
+                   - Portion control: Due to their high sugar content and calorie density, it's important to consume gummy candies in moderation. 
+                     It's advisable to be mindful of portion sizes and limit consumption to prevent excessive sugar intake.
+                
+                It's worth noting that gummy candies are considered a type of confectionery and should be consumed in moderation as part of a balanced diet. 
+                Excessive consumption of sugary treats, including gummy candies, can contribute to weight gain, tooth decay, and an increased risk of 
+                chronic health conditions when consumed regularly. For a healthier alternative, consider enjoying fresh fruits or homemade snacks with 
+                natural ingredients.
+            </div>
+        </section>
+        <center>
+            <div class="white"><a href="potato_chips.html"class="next-button">Previous</a>         <a href="frech_fries.html"class="next-button">  Next  </a>
+            </div>
+        </center>
+    <footer>
+            <div class="footer-content">
+                <h3> NurishNation</h3>
+                <p>Nutrition is the biochemical and physiological process by which an organism uses food to support its life.
+                     It provides organisms with nutrients</p>
+                <ul class="socials">
+                    <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-google-plus"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <p>copyright &copy;2023<span> NurishNation </span></p>
+            </div>
+    </footer>
+</body>
+<script>
+    let menuToggle =document.querySelector('.menuToggle');
+   let header = document.querySelector('header');
+   menuToggle.onclick = function(){
+       header.classList.toggle('active');
+   }
+</script>
+</html>

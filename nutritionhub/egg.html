@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>egg</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+
+<body>
+    <header class="fixed">
+        <div class="logo">
+            <h1>Nourish<span>Nation</span></h1>
+        </div>
+      <div class="menuToggle"></div>
+      <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="fitness.html">Fitness</a></li>
+            <li><a href="#"class="active">Nutrition</a>
+                <ul>
+                    <li><a href="protein.html"class="active">Protien</a></li>
+                    <li><a href="carbohydrates.html">Carbohydrates</a></li>
+                    <li><a href="vitamins.html">Vitamins</a></li>
+                    <li><a href="supplements.html">Supplements</a></li>
+                </ul></li>
+            <li><a href="#">Diet Recipes</a>
+                <ul>
+                    <li><a href="break_fast.html">Break Fast</a></li>
+                    <li><a href="dinner.html">Dinner</a></li>
+                    <li><a href="lunch.html">Lunch</a></li>
+                </ul>
+            </li>
+        </ul>
+      </nav>
+    </header>
+        <section>
+            <img src="image/egg.jpg" alt="egg image" class="img-size">
+            <div class="sub-content">
+                Eggs are a nutritious and versatile food that can be a part of a healthy diet. They are an excellent source of protein, 
+vitamins, minerals, and healthy fats. Here is some information about eggs, including their protein content and various ways to incorporate 
+them into your diet:
+
+1. Protein content: Eggs are considered a high-quality source of protein, meaning they contain all the essential amino acids that your 
+body needs. The protein content in an egg is primarily found in the egg white. The average large egg contains about 6 grams of protein.
+
+2. Nutritional profile: In addition to protein, eggs are also rich in several other essential nutrients. They provide vitamins such as 
+vitamin A, vitamin D, vitamin E, vitamin B12, and folate. Eggs are also a source of minerals like iron, zinc, selenium, and choline. 
+Additionally, eggs contain healthy fats, including omega-3 fatty acids.
+
+3. Cooking methods: Eggs can be prepared in various ways to suit different tastes and preferences. Here are some common methods:
+
+   - Boiled eggs: Place eggs in boiling water and cook for around 6-7 minutes for a soft-boiled egg or 9-12 minutes for a hard-boiled egg.
+
+   - Fried eggs: Heat a small amount of oil or butter in a pan, crack the egg into the pan, and cook until the desired doneness.
+
+   - Scrambled eggs: Beat the eggs in a bowl, add a little milk or water, and cook them in a pan while stirring until they reach a soft, 
+   fluffy consistency.
+
+   - Poached eggs: Bring water to a simmer, add a splash of vinegar, create a gentle whirlpool, and carefully slide the cracked egg into 
+   the center. Cook for about 3-4 minutes until the whites are set but the yolk is still runny.
+
+   - Baked or shirred eggs: Crack eggs into individual ramekins or a baking dish, add desired toppings like vegetables or cheese, and bake
+   until the whites are set but the yolks are still soft.
+
+4. Pairing and serving ideas: Eggs can be enjoyed in many ways:
+
+   - Breakfast: Serve eggs with whole-grain toast, vegetables, and a side of fruit for a well-rounded meal.
+
+   - Salads: Add hard-boiled or poached eggs to salads for extra protein and flavor.
+
+   - Sandwiches and wraps: Include sliced or mashed boiled eggs in sandwiches or wraps along with your favorite ingredients.
+
+   - Omelets: Whisk eggs with vegetables, cheese, or lean meats to make a delicious and filling omelet.
+
+   - Quiches or frittatas: Prepare a savory egg dish by combining eggs with vegetables, cheese, and herbs, then baking until set.
+
+Remember to cook eggs thoroughly to reduce the risk of foodborne illness. It's also worth noting that individual dietary needs and 
+preferences may vary, so it's always a good idea to consult with a healthcare professional or nutritionist for personalized advice.
+            </div>
+        </section>
+        <center>
+            <div class="white"><a href="fish.html"class="next-button">Previous</a>         <a href="almonds.html"class="next-button">  Next  </a>
+            </div>
+        </center>
+    <footer>
+            <div class="footer-content">
+                <h3> NurishNation</h3>
+                <p>Nutrition is the biochemical and physiological process by which an organism uses food to support its life.
+                     It provides organisms with nutrients</p>
+                <ul class="socials">
+                    <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-google-plus"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <p>copyright &copy;2023<span> NurishNation </span></p>
+            </div>
+    </footer>
+</body>
+<script>
+    let menuToggle =document.querySelector('.menuToggle');
+   let header = document.querySelector('header');
+   menuToggle.onclick = function(){
+       header.classList.toggle('active');
+   }
+</script>
+</html>
